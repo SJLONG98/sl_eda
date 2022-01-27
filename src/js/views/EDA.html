@@ -1,0 +1,28 @@
+<!--
+ Copyright (c) 2014, 2021, Oracle and/or its affiliates.
+ Licensed under The Universal Permissive License (UPL), Version 1.0
+ as shown at https://oss.oracle.com/licenses/upl/
+ -->
+
+<div class="oj-hybrid-padding">
+    <h1>EDA: Espenses Digital Assistant</h1>
+</div>
+
+
+<div class="oj-hybrid-padding">
+    <div id="chat" class="chat">
+        <div id="messages" class="messages">
+            <div id="chatbox">
+                <h5 id="chat-timestamp"></h5>
+                <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+            </div>
+        </div>
+        <oj-input-text id="chatbotmessage" label-hint="Type Your Question Here">
+            <div slot="start" class="oj-text-field-start-end-icon oj-ux-ico-customer-request" role="img"></div>
+            <!--Send button-->
+            <oj-button slot="end" display="icons">
+                <span slot="endIcon" class="oj-ux-ico-send"></span>
+            </oj-button>
+        </oj-input-text>
+    </div>
+</div>
