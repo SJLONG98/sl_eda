@@ -7,22 +7,34 @@
 <div class="oj-hybrid-padding">
     <h1>EDA: Espenses Digital Assistant</h1>
 </div>
+<script>
+    Date.now()
+</script>
+<div id="collapsiblePage" data-oj-binding-provider="none">
+    <oj-collapsible id="c1">
+        <h3 id="h" slot="header">Open Chatbot</h3>
+        <div class="oj-hybrid-padding">
+            <div id="chat" class="chat">
+                <div id="messages" class="messages">
+                    <div id="chatbox">
+                        <h8 id="timeStamp">fff</h8>
+                        <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                    </div>
+                </div>
 
-
-<div class="oj-hybrid-padding">
-    <div id="chat" class="chat">
-        <div id="messages" class="messages">
-            <div id="chatbox">
-                <h5 id="chat-timestamp"></h5>
-                <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                <oj-input-text id="userMessage" label-hint="Type Your Question Here">
+                    <div slot="start" class="oj-text-field-start-end-icon oj-ux-ico-customer-request" role="img"></div>
+                    <p></p>
+                    <!--Send button-->
+                    <oj-button slot="end" display="icons" onclick="sendButton()">
+                        <span slot="endIcon" class="oj-ux-ico-send"></span>
+                    </oj-button>
+                </oj-input-text>
             </div>
         </div>
-        <oj-input-text id="chatbotmessage" label-hint="Type Your Question Here">
-            <div slot="start" class="oj-text-field-start-end-icon oj-ux-ico-customer-request" role="img"></div>
-            <!--Send button-->
-            <oj-button slot="end" display="icons">
-                <span slot="endIcon" class="oj-ux-ico-send"></span>
-            </oj-button>
-        </oj-input-text>
-    </div>
+    </oj-collapsible>
+</div>
+
+<div id="chat-bar-bottom">
+    <p></p>
 </div>
