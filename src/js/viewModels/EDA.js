@@ -8,27 +8,29 @@
 /*
  * Your EDA ViewModel code goes here
  */
-require(["require", "exports", "knockout", "ojs/ojbootstrap", "ojs/ojknockout", "ojs/ojinputtext", "ojs/ojbutton", "ojs/ojlabel", "ojs/ojcollapsible", "ojs/ojformlayout", ], function(require, exports, ko, Bootstrap) {
-    "use strict";
-});
 
 
 
-    var dt = new Date();
-    document.getElementById("timeStamp").innerHTML = dt.toLocaleTimeString();
+define(['../accUtils', 'require', 'exports', 'knockout', 'ojs/ojbootstrap', 'ojs/ojknockout',
+        'ojs/ojinputtext', 'ojs/ojbutton', 'ojs/ojlabel', 'ojs/ojcollapsible', 'ojs/ojformlayout',
+    ],
+    function(accUtils, require, exports, ko, Bootstrap) {});
+
+var dt = new Date();
+document.getElementById("timeStamp").innerHTML = dt.toLocaleTimeString();
 
 
 // Gets the first message
 function firstBotMessage() {
-    let firstMessage = "How's it going?"
-    document.getElementById("botStarterMessage").innerHTML = '<p class="botText"><span>' + firstMessage + '</span></p>';
+    let firstMessage = "Hello, Please ask me a question"
+    document.getElementById("botMessage").innerHTML = '<p class="botText"><span>' + firstMessage + '</span></p>';
 
     let time = getTime();
 
     $("#timeStamp").append(time);
     document.getElementById("userMessage").scrollIntoView(false);
 }
-
+firstBotMessage();
 
 // Retrieves the response
 function getHardResponse(userText) {
@@ -36,7 +38,7 @@ function getHardResponse(userText) {
     let botHtml = '<p class="botText"><span>' + botResponse + '</span></p>';
     $("#chatbox").append(botHtml);
 
-    document.getElementById("chat-bar-bottom").scrollIntoView(true);
+    document.getElementById("bottom").scrollIntoView(true);
 }
 
 //Gets the text from the input box and processes it
@@ -46,7 +48,7 @@ function getResponse() {
 
     $("#userMessage").val("");
     $("#chatbox").append(userHtml);
-    document.getElementById("chat-bar-bottom").scrollIntoView(true);
+    document.getElementById("bottom").scrollIntoView(true);
 
     setTimeout(() => {
         getHardResponse(userText);
@@ -60,7 +62,7 @@ function buttonSendText(sampleText) {
 
     $("#userMessage").val("");
     $("#chatbox").append(userHtml);
-    document.getElementById("chat-bar-bottom").scrollIntoView(true);
+    document.getElementById("bottom").scrollIntoView(true);
 
     //Uncomment this if you want the bot to respond to this buttonSendText event
     // setTimeout(() => {
