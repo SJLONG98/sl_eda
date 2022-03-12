@@ -14,7 +14,14 @@
             <oj-collapsible id="c1">
                 <h3 id="h" slot="header">Train Travel News</h3>
                 <div id="chat" class="chat">
+                    <script>
+                        var RealtimetrainsClient = require('realtimetrains')
 
+                        var rttClient = new RealtimetrainsClient({})
+                        rttClient.getLocationList({ 'station': 'CHX' }).then((locationList) => {
+                        console.log(locationList.data)
+                        })
+                    </script>
                 </div>
         
             </oj-collapsible>
