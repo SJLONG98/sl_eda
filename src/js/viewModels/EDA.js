@@ -143,51 +143,105 @@ function getBotResponse(input) {
     var userInput = input.toLowerCase()
 
     console.log(userInput)
-        //rock paper scissors
-    if (userInput.includes("meal expense", "away from home", "is the limit £30 per night")) {
+
+    if (userInput.includes("meal expense")) {
+        return "If you are staying in a hotel for one night of more, the meal expense limit is £30 per night.";
+    } else if (userInput.includes("away from home")) {
+        return "If you are staying in a hotel for one night of more, the meal expense limit is £30 per night.";
+    } else if (userInput.includes("is the limit £30 per night")) {
         return "If you are staying in a hotel for one night of more, the meal expense limit is £30 per night.";
     }
 
+    if (userInput.includes("booking site")) {
+        return "Capgemini makes use of the Egencia site. All train, car, plane and hotel bookings should be made through Egencia.";
+    } else if (userInput.includes("travel site")) {
+        return "Capgemini makes use of the Egencia site. All train, car, plane and hotel bookings should be made through Egencia.";
+    } else if (userInput.includes("egencia")) {
+        return "Capgemini makes use of the Egencia site. All train, car, plane and hotel bookings should be made through Egencia.";
+    }
 
-    // if (userInput.includes("booking site", "travel site", "egencia")) {
-    //     return "Capgemini makes use of the Egencia site. All train, car, plane and hotel bookings should be made through Egencia.";
-    // }
+    if (userInput.includes("mileage decreased")) {
+        return "This will be due to you driving more than 10,000 miles for Capgemini, as per HMRC the rate decreased to 25p for every mile over 10,000. This resets at the start of each Tax year.";
+    } else if (userInput.includes("my mileage was 45p")) {
+        return "This will be due to you driving more than 10,000 miles for Capgemini, as per HMRC the rate decreased to 25p for every mile over 10,000. This resets at the start of each Tax year.";
+    } else if (userInput.includes("is now 25p")) {
+        return "This will be due to you driving more than 10,000 miles for Capgemini, as per HMRC the rate decreased to 25p for every mile over 10,000. This resets at the start of each Tax year.";
+    } else if (userInput.includes("10000 miles")) {
+        return "This will be due to you driving more than 10,000 miles for Capgemini, as per HMRC the rate decreased to 25p for every mile over 10,000. This resets at the start of each Tax year.";
+    } else if (userInput.includes("hmrc mileage limit")) {
+        return "This will be due to you driving more than 10,000 miles for Capgemini, as per HMRC the rate decreased to 25p for every mile over 10,000. This resets at the start of each Tax year.";
+    }
 
-    // if (userInput.includes("mileage decreased", "my mileage was 45p", "is now 25p", "10000 miles", "hmrc mileage limit")) {
-    //     return "This will be due to you driving more than 10,000 miles for Capgemini, as per HMRC the rate decreased to 25p for every mile over 10,000. This resets at the start of each Tax year.";
-    // }
-    // if (userInput.includes("incidental fee", "hotel fee", "accidental hotel fee", "cover accidental fees")) {
-    //     return "Capgemini covers incidental expenses, if this in the UK, Capgemini covers up to £5 for incidental expenses and £10 over seas ";
-    // }
-    // if (userInput.includes("alcohol limit", "whole allowence on alcohol", "full meal expense on alcohol")) {
-    //     return "I'm afraid not as per the policy. A meal must not consist of only alcoholic beverages. Alcohol is allowed when purchased with a meal but should not be excessive.";
-    // }
-    // if (userInput.includes("alternative accommodation Limit", "barrow-In-Furness", "alternative accommodation")) {
-    //     return "The Capgemini Alternative accommodation limit for Barrow-in-Furness is £92 per night.";
-    // }
-    // if (userInput.includes("amex fees", "rewards points fees", "american express rewards fees")) {
-    //     return "Nope,  corporate card “rewards” Membership fees including AMEX membership rewards are not reimbursable expenses";
-    // }
-    // if (userInput.includes("golf club", "club fees", "club fees")) {
-    //     return "I'm afraid not, as per the Capgemini policy the Company will not, under any circumstances, pay any costs in respect of clubs or organisations(e.g. sports and golf clubs) irrespective of whether the membership is used to further the Company’sbusiness.";
-    // }
-    // if (userInput.includes("flowers")) {
-    //     return "Flowers are not allowable through Expenses, other than wreaths for funerals up to £100. Purchases of flowers (maximum £40) should be ordered through GPS.";
-    // }
-    // if (userInput.includes("reward meals")) {
-    //     return "Meals as Rewards should be claimed in the Meals section of MyExpenses under the “Team Meals” Category. Make sure VAT receipt is obtained.";
-    // }
-    // if (userInput.includes("parking fine", "recieved a parking fine", "Cover the cost of a parking fine")) {
-    //     return "sorry but The Company will not pay parking fines or other traffic offence fines under any circumstances.";
-    // }
-    // if (userInput.includes("tea", "coffee", "hot drinks not available for free", "coffee isnt free", "tea isnt free")) {
-    //     return "You are in luck Capgemini can help! If you are on a client site where you have to pay for tea and coffee, you may claim reasonable costs through expenses without the need for a receipt up to £5 per day ";
-    // }
+    if (userInput.includes("incidental fee")) {
+        return "Capgemini covers incidental expenses, if this in the UK, Capgemini covers up to £5 for incidental expenses and £10 over seas ";
+    } else if (userInput.includes("hotel fee")) {
+        return "Capgemini covers incidental expenses, if this in the UK, Capgemini covers up to £5 for incidental expenses and £10 over seas ";
+    } else if (userInput.includes("accidental hotel fee")) {
+        return "Capgemini covers incidental expenses, if this in the UK, Capgemini covers up to £5 for incidental expenses and £10 over seas ";
+    } else if (userInput.includes("cover accidental fees")) {
+        return "Capgemini covers incidental expenses, if this in the UK, Capgemini covers up to £5 for incidental expenses and £10 over seas ";
+    }
+
+    if (userInput.includes("alcohol limit")) {
+        return "I'm afraid not as per the policy. A meal must not consist of only alcoholic beverages. Alcohol is allowed when purchased with a meal but should not be excessive.";
+    } else if (userInput.includes("whole allowence on alcohol")) {
+        return "I'm afraid not as per the policy. A meal must not consist of only alcoholic beverages. Alcohol is allowed when purchased with a meal but should not be excessive.";
+    } else if (userInput.includes("full meal expense on alcohol")) {
+        return "I'm afraid not as per the policy. A meal must not consist of only alcoholic beverages. Alcohol is allowed when purchased with a meal but should not be excessive.";
+    }
 
 
+    if (userInput.includes("alternative accommodation Limit")) {
+        return "The Capgemini Alternative accommodation limit for Barrow-in-Furness is £92 per night.";
+    } else if (userInput.includes("barrow-In-Furness")) {
+        return "The Capgemini Alternative accommodation limit for Barrow-in-Furness is £92 per night.";
+    } else if (userInput.includes("alternative accommodation")) {
+        return "The Capgemini Alternative accommodation limit for Barrow-in-Furness is £92 per night.";
+    }
 
+    if (userInput.includes("amex fees")) {
+        return "Nope,  corporate card “rewards” Membership fees including AMEX membership rewards are not reimbursable expenses";
+    } else if (userInput.includes("rewards points fees")) {
+        return "Nope,  corporate card “rewards” Membership fees including AMEX membership rewards are not reimbursable expenses";
+    } else if (userInput.includes("american express rewards fees")) {
+        return "Nope,  corporate card “rewards” Membership fees including AMEX membership rewards are not reimbursable expenses";
+    }
 
+    if (userInput.includes("golf club")) {
+        return "I'm afraid not, as per the Capgemini policy the Company will not, under any circumstances, pay any costs in respect of clubs or organisations(e.g. sports and golf clubs) irrespective of whether the membership is used to further the Company’sbusiness.";
+    } else if (userInput.includes("club fees")) {
+        return "I'm afraid not, as per the Capgemini policy the Company will not, under any circumstances, pay any costs in respect of clubs or organisations(e.g. sports and golf clubs) irrespective of whether the membership is used to further the Company’sbusiness.";
+    } else if (userInput.includes("club fees")) {
+        return "I'm afraid not, as per the Capgemini policy the Company will not, under any circumstances, pay any costs in respect of clubs or organisations(e.g. sports and golf clubs) irrespective of whether the membership is used to further the Company’sbusiness.";
+    }
 
+    if (userInput.includes("flowers")) {
+        return "Flowers are not allowable through Expenses, other than wreaths for funerals up to £100. Purchases of flowers (maximum £40) should be ordered through GPS.";
+    }
+
+    if (userInput.includes("reward meals")) {
+        return "Meals as Rewards should be claimed in the Meals section of MyExpenses under the “Team Meals” Category. Make sure VAT receipt is obtained.";
+    }
+
+    if (userInput.includes("parking fine")) {
+        return "sorry but The Company will not pay parking fines or other traffic offence fines under any circumstances.";
+    } else if (userInput.includes("recieved a parking fine")) {
+        return "sorry but The Company will not pay parking fines or other traffic offence fines under any circumstances.";
+    } else if (userInput.includes("Cover the cost of a parking fine")) {
+        return "sorry but The Company will not pay parking fines or other traffic offence fines under any circumstances.";
+    }
+
+    if (userInput.includes("tea")) {
+        return "You are in luck Capgemini can help! If you are on a client site where you have to pay for tea and coffee, you may claim reasonable costs through expenses without the need for a receipt up to £5 per day ";
+    } else if (userInput.includes("coffee")) {
+        return "You are in luck Capgemini can help! If you are on a client site where you have to pay for tea and coffee, you may claim reasonable costs through expenses without the need for a receipt up to £5 per day ";
+    } else if (userInput.includes("hot drinks not available for free")) {
+        return "You are in luck Capgemini can help! If you are on a client site where you have to pay for tea and coffee, you may claim reasonable costs through expenses without the need for a receipt up to £5 per day ";
+    } else if (userInput.includes("coffee isnt free")) {
+        return "You are in luck Capgemini can help! If you are on a client site where you have to pay for tea and coffee, you may claim reasonable costs through expenses without the need for a receipt up to £5 per day ";
+    } else if (userInput.includes("tea isnt free")) {
+        return "You are in luck Capgemini can help! If you are on a client site where you have to pay for tea and coffee, you may claim reasonable costs through expenses without the need for a receipt up to £5 per day ";
+    }
     // Simple response
     if (userInput == "hello") {
         return "Hello there!";
