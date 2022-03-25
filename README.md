@@ -1,6 +1,7 @@
 # sl_eda
 Ensure latest version of Node.js is installed 
 
+Within the folder structure
 
 Run first
 npm install promises 
