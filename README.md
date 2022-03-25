@@ -1,15 +1,16 @@
 # sl_eda
 Ensure latest version of Node.js is installed 
 
-Install
 
+Run first
 npm install promises 
 
+run Second 
 npm install -g @oracle/ojet-cli
 
 run if any issues 
 npm audit fix 
 
 
-Run 
+final application Run script
 Ojet serve
