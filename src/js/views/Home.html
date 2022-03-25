@@ -6,28 +6,23 @@
 <div class="oj-hybrid-padding">
     <h1>Home</h1>
     <h3>
-        include news about travel if possible
+        Travel News
     </h3>
     <!-- Train travel news API-->
+
     <body>
         <div id="collapsiblePage" data-oj-binding-provider="none">
             <oj-collapsible id="c1">
                 <h3 id="h" slot="header">Train Travel News</h3>
                 <div id="chat" class="chat">
-                    <script>
-                        var RealtimetrainsClient = require('realtimetrains')
 
-                        var rttClient = new RealtimetrainsClient({})
-                        rttClient.getLocationList({ 'station': 'CHX' }).then((locationList) => {
-                        console.log(locationList.data)
-                        })
-                    </script>
                 </div>
-        
+
             </oj-collapsible>
-        </div> 
+        </div>
     </body>
     <!-- Plane travel news API-->
+
     <body>
         <div id="collapsiblePage" data-oj-binding-provider="none">
             <oj-collapsible id="c1">
@@ -35,11 +30,12 @@
                 <div id="chat" class="chat">
 
                 </div>
-        
+
             </oj-collapsible>
-        </div> 
+        </div>
     </body>
-<!-- Road travel news API-->
+    <!-- Road travel news API-->
+
     <body>
         <div id="collapsiblePage" data-oj-binding-provider="none">
             <oj-collapsible id="c1">
@@ -47,9 +43,9 @@
                 <div id="chat" class="chat">
 
                 </div>
-        
+
             </oj-collapsible>
-        </div> 
+        </div>
     </body>
 
 

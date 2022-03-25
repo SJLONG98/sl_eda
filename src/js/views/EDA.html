@@ -16,12 +16,12 @@
                 <div id="chat" class="chat">
                     <div id="messages" class="messages">
                         <div id="chatbox">
-                            <h8 id="timeStamp">fff</h8>
+                            <span><oj-bind-text value="[[timeStamp]]"></oj-bind-text></span>
                             <p id="botMessage" class="botText"><span>Hello, Please ask me a question</span></p>
                         </div>
                     </div>
 
-                    <oj-input-text id="userMessage" label-hint="Type Your Question Here">
+                    <oj-input-text id="userMessage" label-hint="Type Your Question Here" on-keydown="[[enterKey]]">
                         <div slot="start" class="oj-text-field-start-end-icon oj-ux-ico-customer-request" role="img"></div>
                         <p></p>
                         <!--Send button-->
@@ -31,8 +31,10 @@
                     </oj-input-text>
                 </div>
             </div>
+
         </oj-collapsible>
     </div>
+
 
     <div id="bottom">
         <p></p>
